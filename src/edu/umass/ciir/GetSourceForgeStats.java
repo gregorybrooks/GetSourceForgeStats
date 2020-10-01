@@ -29,7 +29,8 @@ public class GetSourceForgeStats {
             "galago-3.14159",
             "galago-3.15",
             "galago-3.16",
-            "galago-3.17"
+            "galago-3.17",
+            "galago-3.18"
     ));
     List<String> indriReleases = new ArrayList<String>(Arrays.asList(
             "indri-5.1",
@@ -47,11 +48,13 @@ public class GetSourceForgeStats {
             "indri-5.13",
             "indri-5.14",
             "indri-5.15",
-            "indri-5.16"));
+            "indri-5.16",
+            "indri-5.17"));
     List<String> stemmerReleases = new ArrayList<String>(Arrays.asList(
             "KrovetzStemmer-3.4"));
     List<String> lucindriReleases = new ArrayList<>(Arrays.asList(
-            "lucindri-1.0"
+            "lucindri-1.0",
+            "lucindri-1.1"
     ));
     List<String> RankLibReleases = new ArrayList<>(Arrays.asList(
             "RankLib-1.0",
@@ -67,7 +70,8 @@ public class GetSourceForgeStats {
             "RankLib-2.10",
             "RankLib-2.11",
             "RankLib-2.12",
-            "RankLib-2.13"
+            "RankLib-2.13",
+            "RankLib-2.14"
     ));
     List<String> sifakaReleases = new ArrayList<>(Arrays.asList(
             "sifaka-1.0",
@@ -77,7 +81,8 @@ public class GetSourceForgeStats {
             "sifaka-1.4",
             "sifaka-1.5",
             "sifaka-1.6",
-            "sifaka-1.7"
+            "sifaka-1.7",
+            "sifaka-1.8"
     ));
     List<String> wordEntityDuetReleases = new ArrayList<>(Arrays.asList(
             "WordEntityDuet-1.0"
@@ -91,7 +96,8 @@ public class GetSourceForgeStats {
         long totalDownloads = 0;
         for (String release : productReleases) {
             String sourceForgeUrl = sourceForgeLemurDirectory
-                        + release + "/stats/json?start_date=2019-09-01&end_date=2020-08-31";
+                        + release + "/stats/json?start_date=2015-03-01&end_date=2020-09-01";
+//            + release + "/stats/json?start_date=2019-09-01&end_date=2020-08-31";
      //                + release + "/stats/json?start_date=2012-06-20&end_date=2020-08-31";
             URL url = new URL(sourceForgeUrl);
 
